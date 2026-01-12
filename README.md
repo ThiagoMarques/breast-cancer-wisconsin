@@ -53,58 +53,6 @@ breast-cancer-wisconsin/
 └── LICENSE                           # Licença do projeto
 ```
 
-## Requisitos do Tech Challenge
-
-Este projeto atende aos seguintes requisitos obrigatórios do Tech Challenge:
-
-### 1. Exploração de Dados
-
-- Carregamento e exploração das características do dataset
-- Estatísticas descritivas completas
-- Visualizações e análise de distribuições
-- Análise de balanceamento de classes
-- Identificação de valores ausentes e inconsistências
-
-### 2. Pré-processamento
-
-- Limpeza de dados (remoção de colunas desnecessárias)
-- Pipeline de pré-processamento estruturado
-- Análise de correlação entre features
-- Identificação de features mais relevantes
-- Preparação para normalização/padronização
-
-### 3. Modelagem
-
-- Implementação de múltiplas técnicas de classificação
-- Separação adequada dos dados (treino, validação, teste)
-- Aplicação de técnicas de feature scaling quando necessário
-
-### 4. Treinamento e Avaliação
-
-- Treinamento dos modelos com conjunto de treinamento
-- Métricas de avaliação: Accuracy, Recall, F1-score
-- Matriz de confusão para análise detalhada
-- Feature Importance para interpretação dos modelos
-- Análise crítica dos resultados
-
-### 5. Entregáveis
-
-- Código Python estruturado e documentado
-- Notebook Jupyter com análise completa
-- README.md com documentação do projeto
-- Dataset incluído no repositório
-- Resultados documentados (gráficos, análises, métricas)
-
-## Tecnologias Utilizadas
-
-- **Python 3.x**: Linguagem de programação principal
-- **Pandas**: Manipulação e análise de dados
-- **NumPy**: Operações numéricas
-- **Matplotlib**: Visualizações básicas
-- **Seaborn**: Visualizações estatísticas avançadas
-- **Scikit-learn**: Algoritmos de Machine Learning e ferramentas de pré-processamento
-- **Jupyter Notebook**: Ambiente de desenvolvimento e análise
-
 ## Instalação e Configuração
 
 ### Pré-requisitos
@@ -195,31 +143,6 @@ Os resultados são analisados criticamente considerando:
 - Análise de erros (falsos positivos e falsos negativos)
 - Impacto do desbalanceamento de classes
 - Aplicabilidade prática em contexto médico
-
-## Considerações Importantes
-
-### Desbalanceamento de Classes
-
-O dataset apresenta um desbalanceamento moderado (62.74% benignos vs 37.26% malignos). Esta característica é considerada durante a modelagem para evitar viés em favor da classe majoritária.
-
-### Escalas dos Dados
-
-As features apresentam escalas muito diferentes, indicando a necessidade de padronização ou normalização antes da aplicação de modelos sensíveis à escala.
-
-### Multicolinearidade
-
-Algumas features apresentam alta correlação entre si (como radius, perimeter e area, que são relacionadas geometricamente), o que pode afetar alguns modelos e justificar técnicas de redução de dimensionalidade.
-
-## Próximos Passos
-
-Melhorias futuras podem incluir:
-
-- Implementação de validação cruzada para avaliação mais robusta
-- Aplicação de técnicas de balanceamento de classes (SMOTE, undersampling)
-- Otimização de hiperparâmetros (GridSearch, RandomSearch)
-- Implementação de SHAP values para interpretabilidade avançada
-- Containerização com Docker
-- Desenvolvimento de API para deploy do modelo
 
 ## Referências
 
